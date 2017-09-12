@@ -1,0 +1,80 @@
+@import '../../../styles/base';
+
+.todos {
+  min-width: 550px;
+
+  .todos__input {
+    width: 100%;
+    padding: 6px;
+    margin: 12px 0;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $border-color;
+    @include transition(all .3s);
+
+    &:focus {
+      border-bottom-width: 2px;
+      border-bottom-color: $accent;
+    }
+  }
+
+  .todos__list {
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  .todos__filter {
+    text-align: left;
+    text-transform: uppercase;
+
+    .todos__filter__item {
+      display: inline;
+      font-weight: 400;
+      color: $tab-text-color;
+      padding: 8px;
+      cursor: pointer;
+      @include transition(all .3s);
+
+      &--selected {
+        color: $accent;
+      }
+    }
+
+    .todos__filter__toggle-all {
+      display: inline;
+      float: right;
+      text-transform: none;
+      font-weight: 300;
+      @include transition(all .3s);
+      cursor: pointer;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  .todos__footer {
+    text-align: left;
+    font-weight: 300;
+
+    .todos__footer__done-count {
+      color: $text-color;
+      display: inline;
+    }
+
+    .todos__footer__clear {
+      display: inline;
+      float: right;
+      cursor: pointer;
+      @include transition(all .3s);
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}

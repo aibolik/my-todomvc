@@ -1,8 +1,15 @@
+@import "../../styles/base";
+
 .page-layout__viewport {
   padding-top: 4rem;
-}
 
-.page-layout__nav-item--active {
-  font-weight: bold;
-  text-decoration: underline;
+  h1 {
+    color: $accent;
+    font-size: 60px;
+    font-weight: 100;
+
+    span {
+      color: $text-color;
+    }
+  }
 }

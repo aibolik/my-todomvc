@@ -1,8 +1,8 @@
 import React from 'react'
-import { HomeView } from 'routes/Home/components/HomeView'
+import { HomeView } from 'routes/Todos/components/HomeView'
 import { render } from 'enzyme'
 
-describe('(View) Home', () => {
+describe('(View) Todos', () => {
   let _component
 
   beforeEach(() => {

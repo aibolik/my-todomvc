@@ -1,6 +1,6 @@
-import HomeRoute from 'routes/Home'
+import HomeRoute from 'routes/Todos'
 
-describe('(Route) Home', () => {
+describe('(Route) Todos', () => {
   let _component
 
   beforeEach(() => {
